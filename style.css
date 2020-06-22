@@ -1,0 +1,27 @@
+header {
+    font-family: 'Linden Hill', serif;
+    font-size: 36px;
+}
+
+.tile-image {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.remain-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tileA {
+    opacity: 100%;
+}
+
+button {
+    margin-bottom: 3px;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+

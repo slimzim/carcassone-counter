@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carcassone Counter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="text-center">Carcassone Counter</header>
+
+<div class="container">
+
+    <div class="row">
+        
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileA.png" class="card-img-top tileA" alt="Tile A">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileA">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileA">+</button>
+            <button type="button" class="subtract" value="tileA">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileB.png" class="card-img-top tileB" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileB">4</span></p>
+            </div>
+            <button type="button" class="add" value="tileB">+</button>
+            <button type="button" class="subtract" value="tileB">-</button>
+        </div>
+    
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileC.png" class="card-img-top tileC" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileC">1</span></p>
+            </div>
+            <button type="button" class="add" value="tileC">+</button>
+            <button type="button" class="subtract" value="tileC">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileD.png" class="card-img-top tileD" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileD">4</span></p>
+            </div>
+            <button type="button" class="add" value="tileD">+</button>
+            <button type="button" class="subtract" value="tileD">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileE.png" class="card-img-top tileE.png" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileE.png">5</span></p>
+            </div>
+            <button type="button" class="add" value="tileE.png">+</button>
+            <button type="button" class="subtract" value="tileE.png">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileF.png" class="card-img-top tileF.png" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileF.png">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileF.png">+</button>
+            <button type="button" class="subtract" value="tileF.png">-</button>
+        </div>
+    
+    </div>
+
+    <div class="row">
+        
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileG.png" class="card-img-top tileG" alt="Tile A">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileG">1</span></p>
+            </div>
+            <button type="button" class="add" value="tileG">+</button>
+            <button type="button" class="subtract" value="tileG">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileH.png" class="card-img-top tileH" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileH">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileH">+</button>
+            <button type="button" class="subtract" value="tileH">-</button>
+        </div>
+    
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileI.png" class="card-img-top tileI" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileI">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileI">+</button>
+            <button type="button" class="subtract" value="tileI">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileJ.png" class="card-img-top tileJ" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileJ">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileJ">+</button>
+            <button type="button" class="subtract" value="tileJ">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileK.png" class="card-img-top tileK.png" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileK.png">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileK.png">+</button>
+            <button type="button" class="subtract" value="tileK.png">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileL.png" class="card-img-top tileL.png" alt="Tile B">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileL.png">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileL.png">+</button>
+            <button type="button" class="subtract" value="tileL.png">-</button>
+        </div>
+    
+    </div>
+
+    <div class="row">
+        
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileM.png" class="card-img-top tileM" alt="Tile M">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileM">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileM">+</button>
+            <button type="button" class="subtract" value="tileM">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileN.png" class="card-img-top tileN" alt="Tile N">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileN">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileN">+</button>
+            <button type="button" class="subtract" value="tileN">-</button>
+        </div>
+    
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileO.png" class="card-img-top tileO" alt="Tile O">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileO">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileO">+</button>
+            <button type="button" class="subtract" value="tileO">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileP.png" class="card-img-top tileP" alt="Tile P">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileP">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileP">+</button>
+            <button type="button" class="subtract" value="tileP">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileQ.png" class="card-img-top tileQ.png" alt="Tile Q">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileQ.png">1</span></p>
+            </div>
+            <button type="button" class="add" value="tileQ.png">+</button>
+            <button type="button" class="subtract" value="tileQ.png">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileR.png" class="card-img-top tileR.png" alt="Tile R">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileR.png">3</span></p>
+            </div>
+            <button type="button" class="add" value="tileR.png">+</button>
+            <button type="button" class="subtract" value="tileR.png">-</button>
+        </div>
+    
+    </div>
+
+    <div class="row">
+        
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileS.png" class="card-img-top tileS" alt="Tile S">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileS">2</span></p>
+            </div>
+            <button type="button" class="add" value="tileS">+</button>
+            <button type="button" class="subtract" value="tileS">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileT.png" class="card-img-top tileT" alt="Tile T">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileT">1</span></p>
+            </div>
+            <button type="button" class="add" value="tileT">+</button>
+            <button type="button" class="subtract" value="tileT">-</button>
+        </div>
+    
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileU.png" class="card-img-top tileU" alt="Tile U">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileU">8</span></p>
+            </div>
+            <button type="button" class="add" value="tileU">+</button>
+            <button type="button" class="subtract" value="tileU">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileV.png" class="card-img-top tileV" alt="Tile V">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileV">9</span></p>
+            </div>
+            <button type="button" class="add" value="tileV">+</button>
+            <button type="button" class="subtract" value="tileV">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileW.png" class="card-img-top tileW.png" alt="Tile W">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileW.png">4</span></p>
+            </div>
+            <button type="button" class="add" value="tileW.png">+</button>
+            <button type="button" class="subtract" value="tileW.png">-</button>
+        </div>
+
+        <div class="card col-sm-2 tile-image" style="width: 18rem;">
+            <img src="./images/tileX.png" class="card-img-top tileX.png" alt="Tile X">
+            <div class="text-center">
+              <p class="remain-text"><span id="tileX.png">1</span></p>
+            </div>
+            <button type="button" class="add" value="tileX.png">+</button>
+            <button type="button" class="subtract" value="tileX.png">-</button>
+        </div>
+    
+    </div>
+
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+</div>
+
+<script src="js.js"></script>
+
+</body>
+</html>
