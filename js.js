@@ -46,7 +46,9 @@ $(".add").on("click", function(){
 })
 
 $(".subtract").on("click", function(){
+    if (window[this.value] > 0) {
     (window[this.value])--
     updateDisplay(this.value)
     valueCheck((window[this.value]), this.value)
+    }
 })
