@@ -3,6 +3,11 @@ header {
     font-size: 36px;
 }
 
+#tilesleft {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .tile-image {
     border: 1px solid black;
     padding: 4px;
@@ -24,4 +29,3 @@ button {
 .row {
     margin-bottom: 5px;
 }
-

@@ -22,9 +22,11 @@ var tileU = 8
 var tileV = 9
 var tileW = 4
 var tileX = 1
+var tileTotal = 72
 
 function updateDisplay(tileName){
     document.getElementById(tileName).innerHTML = (window[tileName])
+    $("#tilesleft").text(tileTotal)
 }
 
 function valueCheck(x, y) {
@@ -41,6 +43,7 @@ function valueCheck(x, y) {
 
 $(".add").on("click", function(){
     (window[this.value])++
+    tileTotal++
     valueCheck((window[this.value]), this.value)
     updateDisplay(this.value)
 })
@@ -48,6 +51,7 @@ $(".add").on("click", function(){
 $(".subtract").on("click", function(){
     if (window[this.value] > 0) {
     (window[this.value])--
+    tileTotal--
     updateDisplay(this.value)
     valueCheck((window[this.value]), this.value)
     }
